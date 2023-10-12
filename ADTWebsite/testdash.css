@@ -1,0 +1,66 @@
+header{
+    background-color: steelblue;
+    color: white;
+    text-align: right;
+    padding: 20px;
+}
+nav {
+    background-color: transparent;
+    color: #fff;
+    padding: 0px 0px;
+}
+.navbar {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+.navbar a:hover {
+    color: black;
+}
+.supercell{
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    background-color: powderblue;
+    border-radius: 10px;
+}
+.h2{
+    margin-top: 0;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.assignment-list{
+    list-style: none;
+    padding: 0;
+}
+.assignment-list li{
+    margin: 10px 0;
+}
+.subcell1 a{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.5s;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subcell1 a:hover{
+    background-color: royalblue;
+}
