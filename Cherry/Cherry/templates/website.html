@@ -1,0 +1,140 @@
+{% load static %}
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Cherry</title>
+        <!-- <link rel="stylesheet" href=" {% static 'style.css' %} "> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+        <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /*background: url("{% static 'C:/StrangerCodes/ADT/Cherry/Cherry/static/admin/img/ceryb.jpg' %} ");*/
+    /* background: url('C:/StrangerCodes/ADT/Cherry/evaluate/templates/images/ceryb.jpg'); */
+    /* background-color: blue; */
+    /* background: url('C://StrangerCodes//ADT//Cherry//evaluate//templates//images//ceryb.jpg'); */
+    background-color: darkorchid;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 75px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li a {
+    transition: background-color 1s, color 1s;
+}
+.nav-links ul li a:hover {
+    background-color: black;
+    color: #fff;
+}
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 60px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px black;
+    color:transparent;
+}
+.text-box p{
+    margin: 5px;
+    font-size: 30px;
+    color: black;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 1s;
+}
+.hero-btn {
+    padding: 10px 30px; /* Adjust the padding for size */
+    font-size: 18px; /* Adjust the font size */
+}
+
+        </style>
+    </head>
+    <!-- <body style="background: url('{% static 'ceryb.jpg' %}')"> -->
+        <body>
+        
+<!--    <img src="{% static 'C:/StrangerCodes/ADT/Cherry/Cherry/static/admin/img/ceryb.jpg' %}" alt="My image">-->
+        <section class="header">
+            <!-- <img src="{% static 'C:\StrangerCodes\ADT\Cherry\static\ceryb.jpg' %}" alt="cannot load"/> -->
+            <nav>
+                <!-- <a href="website.html"><img src="C:\StrangerCodes\ADT\Cherry\evaluate\templates\images\favicon.png"></a> -->
+                <div class="nav-links">
+                    <ul>
+                        <li> <a href="">HOME</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="studentlogin.html">STUDENT</a></li>
+                        <li> <a href="teacherlogin.html">PROFESSOR</a></li>
+                        <li> <a href="uploadform.html">UPLOAD</a></li>
+                        <li> <a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="text-box">
+                <h1>Cherry</h1>
+                <p>Are all cherries from a cherry tree same?</p>
+                <a href="about.html" class="hero-btn">Visit us to know more</a>
+            </div>
+        </section>
+    </body>
+</html>
